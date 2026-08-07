@@ -4,11 +4,11 @@ Project thử nghiệm OCR trên dữ liệu văn bản Hán cổ, với baselin
 
 Hiện project chứa ba nguồn dữ liệu raw:
 
-- `MTHv2`: gồm `MTH1000`, `MTH1200` và `TKH`.
+- `MTHv2` (https://drive.google.com/file/d/1JOFWYmiM2Ljcn1qJII2yHSGNA_0eouaj/view): gồm `MTH1000`, `MTH1200` và `TKH`.
 - `document`: dữ liệu document OCR ở định dạng LMDB.
 - `handwriting`: dữ liệu handwriting từ HWDB / ICDAR 2013 ở định dạng LMDB.
 
-Baseline B0 hiện sử dụng **MTH1000**.
+Baseline B0 (bước 0) hiện sử dụng **MTH1000**.
 
 ---
 
