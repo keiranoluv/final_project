@@ -1,3 +1,5 @@
+README này đã lỗi thời! Không còn chính xác.
+
 # OCR Historical Chinese – PP-OCRv5 Baseline
 
 Project thử nghiệm OCR trên dữ liệu văn bản Hán cổ, với baseline đầu tiên **B0** sử dụng mô hình pretrained `PP-OCRv5_server_rec` trên tập **MTH1000**.
