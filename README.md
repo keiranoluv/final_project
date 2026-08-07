@@ -32,46 +32,11 @@ final_project/
 │   │
 │   └── raw/
 │       ├── document/
-│       │   └── document/
-│       │       ├── document_test/
-│       │       │   ├── data.mdb
-│       │       │   └── lock.mdb
-│       │       ├── document_train/
-│       │       │   ├── data.mdb
-│       │       │   └── lock.mdb
-│       │       └── document_val/
-│       │           ├── data.mdb
-│       │           └── lock.mdb
-│       │
 │       ├── handwriting/
-│       │   └── hwdb_ic13/
-│       │       ├── handwriting_hwdb_train/
-│       │       │   ├── data.mdb
-│       │       │   └── lock.mdb
-│       │       ├── handwriting_hwdb_val/
-│       │       │   ├── data.mdb
-│       │       │   └── lock.mdb
-│       │       └── handwriting_ic13_test/
-│       │           ├── data.mdb
-│       │           └── lock.mdb
-│       │
 │       └── mthv2/
 │           ├── MTH1000/
-│           │   ├── img/
-│           │   ├── label_char/
-│           │   ├── label_table/
-│           │   └── label_textline/
 │           ├── MTH1200/
-│           │   ├── img/
-│           │   ├── label_char/
-│           │   ├── label_table/
-│           │   └── label_textline/
 │           └── TKH/
-│               ├── img/
-│               ├── label_char/
-│               ├── label_table/
-│               └── label_textline/
-│
 ├── outputs/
 │   ├── B0_PP-OCRv5_server_rec/
 │   │   ├── metrics.json
@@ -79,7 +44,6 @@ final_project/
 │   └── B0_smoke_test/
 │       ├── metrics.json
 │       └── predictions.tsv
-│
 ├── scripts/
 │   ├── data/
 │   │   └── prepare_mth1000_b0.py
@@ -433,60 +397,3 @@ python scripts/eval/evaluate_paddleocr_b0.py \
 ```
 
 ---
-
-## 11. Raw datasets
-
-### MTHv2
-
-```text
-data/raw/mthv2/
-├── MTH1000/
-├── MTH1200/
-└── TKH/
-```
-
-Hiện B0 sử dụng:
-
-```text
-data/raw/mthv2/MTH1000
-```
-
-`MTH1200` và `TKH` được giữ lại cho các experiment tiếp theo.
-
-### Document
-
-```text
-data/raw/document/document/
-├── document_train/
-├── document_val/
-└── document_test/
-```
-
-Các split đang ở định dạng LMDB.
-
-### Handwriting
-
-```text
-data/raw/handwriting/hwdb_ic13/
-├── handwriting_hwdb_train/
-├── handwriting_hwdb_val/
-└── handwriting_ic13_test/
-```
-
-Các split đang ở định dạng LMDB.
-
----
-
-## 12. Git
-
-Dataset, processed data, model output, virtual environment và archive không nên commit lên repository.
-
-Các file này được loại trừ thông qua `.gitignore`.
-
-Source code và tài liệu chính nên được commit:
-
-```text
-README.md
-.gitignore
-scripts/
-```
